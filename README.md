@@ -5,7 +5,7 @@ RomDrop edition
 
 ![](images/image128.png)
 
-This document wouldn’t exist without Speeps which single handedly reversed engineered our NC ECU and built RomDrop.
+This document wouldn't exist without Speeps which single handedly reversed engineered our NC ECU and built RomDrop.
 
 * Thank you Speeps
 
@@ -14,17 +14,17 @@ This document wouldn’t exist without Speeps which single handedly reversed eng
   * Kwheels - Founder of the Facebook group and creator of the original quick starter guide.
   * VTECKiller - Moderator of the Facebook Group, constantly supports and helps everyone, probably has the most experience building and tuning 2.5.
   * Shifty35 - Probably the most knowledgeable individual of the group and also constantly supports and helps everyone.
-  * NyxOne - That’s me! 😁Don’t hesitate to [contact me](mailto:dufresne.charles@gmail.com).
+  * NyxOne - That's me! 😁Don't hesitate to [contact me](mailto:dufresne.charles@gmail.com).
 
 * About this document  
-I’ve chosen this format for its ease of use and because it can be easily [downloaded offline](https://docs.google.com/document/d/1b4rhyg6aVLKPjBcbVLuTv8BVeTrC8zoHCeKqxaaMyYw/edit?usp=sharing) on your phone or computer, printed and even [displayed as a website](http://ncmiatatuning.s3-website.us-east-2.amazonaws.com/index.html).
+I've chosen this format for its ease of use and because it can be easily [downloaded offline](https://docs.google.com/document/d/1b4rhyg6aVLKPjBcbVLuTv8BVeTrC8zoHCeKqxaaMyYw/edit?usp=sharing) on your phone or computer, printed and even [displayed as a website](http://ncmiatatuning.s3-website.us-east-2.amazonaws.com/index.html).
 
 # **READ ME (seriously)**
 
-* Use the search function, don’t worry, it won’t hurt you.
+* Use the search function, don't worry, it won't hurt you.
 * Print this guide, read it, take notes.
 * Try to find answers on your own before asking for help.
-* Be polite when asking for help, explain what’s your setup, what you want to do and what you’ve tried. That’ll save everyone’s time and increase the likelihood of getting answered.
+* Be polite when asking for help, explain what's your setup, what you want to do and what you've tried. That'll save everyone's time and increase the likelihood of getting answered.
 
 ## **Other resources**
 
@@ -41,58 +41,58 @@ I’ve chosen this format for its ease of use and because it can be easily [down
   A bit outdated but still a great resource for anyone starting.
 
 * [Rabbit hole notes.](https://docs.google.com/document/d/1Qymdl2K2fghTf299lL89XtY6T7vGxulA9906ujB0MUQ/edit?usp=sharing)  
-  Notes I took while reading the rabbit hole thread, more on the technical side of things. If you’d like to know more without reading
+  Notes I took while reading the rabbit hole thread, more on the technical side of things. If you'd like to know more without reading
 
 * [MX5 Turbo how to](https://docs.google.com/document/d/1q92jzCeni5XRhhC1h6u9REC96A2MLN2Njxks_F1-gWY/edit?usp=sharing)  
-  If you’ve (or plan to) added a turbo or supercharger this document is great starting point and will help grasp what needs to be done in other to make the ECU deal with forced induction.
+  If you've (or plan to) added a turbo or supercharger this document is great starting point and will help grasp what needs to be done in other to make the ECU deal with forced induction.
 
 * Google and Youtube are your friends.  
-  If you don’t know how to take screenshots, install software, Youtube will be your friend.
+  If you don't know how to take screenshots, install software, Youtube will be your friend.
 
 * ChatGPT  
-  It’s free, just use it. I spend a lot of time chatting with it about various topics, just remember that it’s a tool and can fail like any other tools.
+  It's free, just use it. I spend a lot of time chatting with it about various topics, just remember that it's a tool and can fail like any other tools.
 
 # **Before you start**
 
 ## **Do you really want to do this ?**
 
-Seriously! Do you know what you’re getting yourself into ? You can actually brick your ECU, blow your engine, break laws and put your life at risk. On top of that it can get expensive quickly and is time consuming.
+Seriously! Do you know what you're getting yourself into ? You can actually brick your ECU, blow your engine, break laws and put your life at risk. On top of that it can get expensive quickly and is time consuming.
 
-Here’s a simple guide to help you decide:
+Here's a simple guide to help you decide:
 
-### **Don’t do it if**
+### **Don't do it if**
 
 * If all you want is to get a small bump in power after installing headers, a cold air intake, etc. Just ask a reputable tuner to do it.
 * If you expect to find a tune in a box for your needs.
 * If you want someone to tune your car for you.
 * If you expect to be spoon fed every step of the way.
-* If you have a busy schedule (working 40h+ with young kids won’t work).
-* If it’s your daily.
+* If you have a busy schedule (working 40h+ with young kids won't work).
+* If it's your daily.
 
 ### **Do it if**
 
-* If you’re curious and want to learn more.
+* If you're curious and want to learn more.
 * If you want to own and control your tune.
 * If you expect/want to try different things (engine, cams, exhaust, turbo, etc).
 * If you have disposable income.
 
 ### **Yes you can do it**
 
-I am by no means an expert and I went from washing a car twice a year to installing a turbo kit, exhaust, cams, swapping a 2.5, have boost by gear with progressive water meth injection and now makes around 400 BHP. You can do it if that’s what you want but you better buckle up because it’s going to be a journey.
+I am by no means an expert and I went from washing a car twice a year to installing a turbo kit, exhaust, cams, swapping a 2.5, have boost by gear with progressive water meth injection and now makes around 400 BHP. You can do it if that's what you want but you better buckle up because it's going to be a journey.
 
 ## **Is it running well ?**
 
-Make sure your car is in good running condition. Don’t be stupid and try to tune your car if the engine is stuttering, smoking, misfiring, has electrical issues, a bad catalyser, has a 10 year old battery, 10 year old spark plugs, had no oil in change in years, etc. Refusal to do so will make tuning hard if not pointless or even worse (I’ve bricked my ECU because my battery was on its last leg).
+Make sure your car is in good running condition. Don't be stupid and try to tune your car if the engine is stuttering, smoking, misfiring, has electrical issues, a bad catalyser, has a 10 year old battery, 10 year old spark plugs, had no oil in change in years, etc. Refusal to do so will make tuning hard if not pointless or even worse (I've bricked my ECU because my battery was on its last leg).
 
 ## **Don't know where to start ?**
 
 Let me help you! You are here  >   *   <
 
-Seriously though, here’s my recommendations:
+Seriously though, here's my recommendations:
 
 * Buy a Tactrix OpenPort 2 and while you wait
   * Continue reading this document.
-  * Make sure your car is running well (I’ll keep hammering it because it’s important). Please make sure you car battery is not dying or you risk bricking your ECU (ask me how I know).
+  * Make sure your car is running well (I'll keep hammering it because it's important). Please make sure you car battery is not dying or you risk bricking your ECU (ask me how I know).
   * Download EcuFlash and RomDrop and experiment with it.
   * Learn how to download your ROM, patch it AND flash it.
   * Prepare a logcfg.txt
@@ -108,14 +108,14 @@ Seriously though, here’s my recommendations:
 
       This will serve you as a baseline, believe me you absolutely want to have this before you change anything.
 
-  * Patch your ROM and flash it (it’s OK to be nervous, I was shaking the first time).
+  * Patch your ROM and flash it (it's OK to be nervous, I was shaking the first time).
 
 * First tuning session
   * [Disable power enleanment].
   * [Tune load scaling], make sure your trims are under control, it makes everything else easier.
   * [Enable high ECT warning], it could save your engine (ask me how I know 😭).
   * Do something fun
-    * [Learn to use VirtualDyno], trust me, it’s fun.
+    * [Learn to use VirtualDyno], trust me, it's fun.
     * [Remove the 2nd gear torque limiter]
     * [Adjust rev limiter].
     * [Tune AFR for power].
@@ -124,7 +124,7 @@ Seriously though, here’s my recommendations:
 
 # **Tools of the trade**
 
-*Note*: Download links are for Windows only and I won’t explain how to install it.
+*Note*: Download links are for Windows only and I won't explain how to install it.
 
 *Hint:* You can install EcuFlash and open a stock ROM and see the tables or MAPs the ECU uses while you wait for your Tactrix to arrive. You can find a [list of OEM ROMs here](http://ncmiatatuning.s3-website.us-east-2.amazonaws.com/index.html#)
 
@@ -137,10 +137,10 @@ Seriously though, here’s my recommendations:
   Use to update (flash) your ECU with a tune.
 
 * [ECU Flash web site](https://www.tactrix.com/index.php?option=com_content&view=category&layout=blog&id=36&Itemid=57) / [Download link](https://www.tactrix.com/downloads/ecuflash_1444870_win.exe) (free)  
-  Visualize and modify the content of your ECU, that’s where the tuning part is done.
+  Visualize and modify the content of your ECU, that's where the tuning part is done.
 
 * [Virtual Dyno web site](https://barnhill.bitbucket.io/) / [Download link](https://barnhill.bitbucket.io/public/setup.zip) (free)  
-  Needed if you're tuning for power and don’t plan on using an actual dyno.
+  Needed if you're tuning for power and don't plan on using an actual dyno.
 
 * [MegaLogViewerHD](https://www.efianalytics.com/MegaLogViewerHD/) / [Download link](https://www.efianalytics.com/MegaLogViewerHD/download/) ($$$)  
   Visualize data, required if you are serious about tuning.
@@ -150,11 +150,11 @@ Seriously though, here’s my recommendations:
 
 ## **RomDrop - Setup and usage**
 
-*Warning*: It’s advised that you do not simultaneously run applications that consume heavy resources while flashing. Doing so can impact USB speeds which can result in a failed flash (BTW, a failed flash and all its blinking lights isn’t the end of the world... it's recoverable).
+*Warning*: It's advised that you do not simultaneously run applications that consume heavy resources while flashing. Doing so can impact USB speeds which can result in a failed flash (BTW, a failed flash and all its blinking lights isn't the end of the world... it's recoverable).
 
 ### **Installation**
 
-[Download](https://github.com/speepsio/romdrop/archive/refs/heads/master.zip) and unzip the files in a meaningful directory that’s easily accessible. This is what you should expect to find once unzipped.  
+[Download](https://github.com/speepsio/romdrop/archive/refs/heads/master.zip) and unzip the files in a meaningful directory that's easily accessible. This is what you should expect to find once unzipped.  
 ![](images/image59.png)
 
 ### **Files and directories**
@@ -166,7 +166,7 @@ Seriously though, here’s my recommendations:
   * patches: contains the patches of all known ROMs.
 * Files
   * romdrop.exe: the software that does the read and write (flash) your ECU.
-  * romdrop.crc: not a 100% but I think it’s used by RomDrop for the Dynamic Flash function.
+  * romdrop.crc: not a 100% but I think it's used by RomDrop for the Dynamic Flash function.
 
 ### **Functions**
 
@@ -174,9 +174,9 @@ Seriously though, here’s my recommendations:
 * Dynamic Flash ROM - References last successful flash, and updates ROM blocks that have changed. Drastically decrease flash time. [Associate rom's file extension] to use this function with a simp.
 * Flash Entire ROM - Flashes all ROM blocks to the ECU. Required if you've just patched your stock ROM. Flash times are ~90s.
 * *Patch stock ROM - Patch a ROM to allow editing with ECU flash, this step is mandatory before editing in latest versions.
-* Read ROM from ECU - Read the ROM in your ECU whether it’s stock, one of your tunes or an encrypted tune from the tuner. *Always backup your stock ROM*.
+* Read ROM from ECU - Read the ROM in your ECU whether it's stock, one of your tunes or an encrypted tune from the tuner. *Always backup your stock ROM*.
 * Sniff CAN Communications - The app can log 2MB of raw CAN communications. This is for the true hacker types.
-* *Version for ROM - display ROM patch version, however it doesn’t seem to work well with older versions of ROM.
+* *Version for ROM - display ROM patch version, however it doesn't seem to work well with older versions of ROM.
 
 *does not require Tactrix OpenPort to be plugged in.
 
@@ -187,7 +187,7 @@ Seriously though, here’s my recommendations:
 * Insert and turn the ignition key to the ON position, the dash comes alive without starting the engine.
 * Double click romdrop.exe to execute from windows.
   * If this is your first time using RomDrop Windows will throw a warning, ignore it and proceed.
-  * You’ll also have to Accept RomDrop’s agreement.
+  * You'll also have to Accept RomDrop's agreement.
 * Or execute from command line: romdrop.exe <filename.ext>
 
 ### **Disconnection procedure**
@@ -199,13 +199,13 @@ Seriously though, here’s my recommendations:
 
 ### **Versions**
 
-Please be aware that ROMs created with a RomDrop’s metadata version need to be open and edited *only* with that specific version. Failure to comply will likely generate an invalid ROM, could result in weird engine behavior (stuttering, limp mode, CELs, etc) or might even brick your ECU. EcuFlash won’t give you any warning so just be careful.
+Please be aware that ROMs created with a RomDrop's metadata version need to be open and edited *only* with that specific version. Failure to comply will likely generate an invalid ROM, could result in weird engine behavior (stuttering, limp mode, CELs, etc) or might even brick your ECU. EcuFlash won't give you any warning so just be careful.
 
 * Stock ROMs can be open with any versions with no ill effect.
-* Upgrading a tune to a newer version of RomDrop implies that you’ll have to start from a stock ROM and manually reapply every change you’ve made.
+* Upgrading a tune to a newer version of RomDrop implies that you'll have to start from a stock ROM and manually reapply every change you've made.
 * Identifying a version can be done with RomDrop *Version for ROM* function.
   ![](images/image111.png)
-* ROMs shared might not use the same version as yours, EcuFlash will open it even if the metadata doesn’t match.
+* ROMs shared might not use the same version as yours, EcuFlash will open it even if the metadata doesn't match.
 * Mismatched version looks like the example below,
   * the first table has bunch of NaN (Not a Number)
   * the second table has values all over the place.
@@ -220,21 +220,21 @@ You can associate a rom's file extension (typically .bin) with ROMDrop, afterwhi
 
 EcuFlash is the platform we use to visualize and edit the parameters that are used by ECU, to modify these parameters is where the “tuning” process takes place.
 
-### **Metadata (aka the ROM’s definition)**
+### **Metadata (aka the ROM's definition)**
 
-Before you can open a ROM you’ll have to tell EcuFlash where those the metadata files are, in our case these are bundled with RomDrop so you’ll find them there where you’ve unzipped/installed the RomDrop.
+Before you can open a ROM you'll have to tell EcuFlash where those the metadata files are, in our case these are bundled with RomDrop so you'll find them there where you've unzipped/installed the RomDrop.
 
-A ROM’s metadata tells EcuFlash what maps are available, where the data is located in the ROM and how to interpret it. Think of it like a map for driving around town identifying the roads, buildings, etc. A chunkable size of what is considered reverse engineering an ECU comes down to opening an ROM without definition, identifying the maps inside and building a metadata file to be able to interpret and modify its content. This work was done by Speeps**.
+A ROM's metadata tells EcuFlash what maps are available, where the data is located in the ROM and how to interpret it. Think of it like a map for driving around town identifying the roads, buildings, etc. A chunkable size of what is considered reverse engineering an ECU comes down to opening an ROM without definition, identifying the maps inside and building a metadata file to be able to interpret and modify its content. This work was done by Speeps**.
 
-**File > Options > Metadata Directory > Metadata Directory > … > Select <RomDrop’s directory>/metadata directory**.  
+**File > Options > Metadata Directory > Metadata Directory > … > Select <RomDrop's directory>/metadata directory**.  
 ![](images/image10.png)
 
 ### **Color map**
 
-The default color map is a bit intense and hard to read, therefore it’s highly recommended to use the scoobyrom color map.
+The default color map is a bit intense and hard to read, therefore it's highly recommended to use the scoobyrom color map.
 
-Like the metadata files you’ll need to tell EcuFlash where those color map are located which also happen to be in RomDrop’s directory.  
-**File > Options > Color Map Directory > …  > Select <RomDrop’s directory>/colormap directory**.
+Like the metadata files you'll need to tell EcuFlash where those color map are located which also happen to be in RomDrop's directory.  
+**File > Options > Color Map Directory > …  > Select <RomDrop's directory>/colormap directory**.
 
 Once done you should be able to change the default color map.  
 **File > Options > Default Color Map > scoobyrom.map**  
@@ -242,7 +242,7 @@ Once done you should be able to change the default color map.
 
 ### **User level (affect which maps are displayed)**
 
-If you’re not finding a map, chances are they are currently filtered out by your current User Level. If you don’t know what you’re doing, leave it as is, if you want to see all the tables switch it to Developer.
+If you're not finding a map, chances are they are currently filtered out by your current User Level. If you don't know what you're doing, leave it as is, if you want to see all the tables switch it to Developer.
 **File > Options > User Level > Level of user** (dropdown)  
 ![](images/image13.png)
 
@@ -251,19 +251,19 @@ Standard maps will appear in black while advanced maps will show up in blue.
 
 ### **Identify recently modified parameters**
 
-The table will be taken a pink color and the modified cells will have borders around them, only applicable if the ROM or EcuFlash weren’t closed.  
+The table will be taken a pink color and the modified cells will have borders around them, only applicable if the ROM or EcuFlash weren't closed.  
 ![](images/image119.png)
 
 ### **Compare two ROMs.**
 
-Comparing ROMs is an invaluable tool as it allows you to easily spot differences, eg: you can diff your current tune with the previous and easily spot what changes you’ve made.
+Comparing ROMs is an invaluable tool as it allows you to easily spot differences, eg: you can diff your current tune with the previous and easily spot what changes you've made.
 
 Open two ROMs, click File > Compare ROMs  
 ![](images/image40.png)
 
 A summary of the comparison will be displayed in the Task Info console.
 
-*Note:* There’s a small bug that makes some tables always appear as if they’ve been changed when they're not, eg: After Start Enrichment …  
+*Note:* There's a small bug that makes some tables always appear as if they've been changed when they're not, eg: After Start Enrichment …  
 ![](images/image96.png)
 
 Tables with changes will take a blue color and modified cells will be highlighted as can be seen below.
@@ -280,7 +280,7 @@ EcuFlash has a couple very useful functions that can be easily accessed through 
 
 Select one or multiples (click, hold and drag) cells and try one of those functions:
 
-These shortcuts might differ on your computer so you’ll have to experiment.
+These shortcuts might differ on your computer so you'll have to experiment.
 
 * Increment: Increase by the unit configured for this table. (*Shortcut*: *Shift* and *+*)
 * Decrement: Decrease by the unit configured for this table. (*Shortcut*: *Alt* and *-*)
@@ -291,26 +291,26 @@ These shortcuts might differ on your computer so you’ll have to experiment.
 
 ## **Virtual Dyno - Setup and usage**
 
-Virtual Dyno is a tool to visualize the power output of your engine, it’s far from perfect but it can get you in the ballpark and give you a fairly good idea if and where changes made to the engine and/or tune affected the power output.
+Virtual Dyno is a tool to visualize the power output of your engine, it's far from perfect but it can get you in the ballpark and give you a fairly good idea if and where changes made to the engine and/or tune affected the power output.
 ![](images/image124.png)  
 *Blue = Stock 2.0L tuned | Red = Turbo 2.5L (94 octane + WMI)*
 
 ### **Before you start**
 
-There’s a few important details you should know:
+There's a few important details you should know:
 
 * This is not a real dynamometer and not a substitute for one especially when fine tuning timing or VCT.
 * Results depend highly on the quality of data used, to get good data you will need to be thorough and consistent.
 * Power output is measured at the wheels (WHP). You can however estimate BHP with this formula: WHP/0.85. (eg: 143 WHP = 168 BHP).
 * Power is estimated based on engine speed (RPM), vehicle speed (VSS), vehicle weight (including passenger), drag coefficient, gear ratio, tire size and ambient temperature (colder air is denser and generates more power).
-* Doing pulls for Virtual Dyno implies that you’ll have to either find a private or you'll most likely go above speed limits.
+* Doing pulls for Virtual Dyno implies that you'll have to either find a private or you'll most likely go above speed limits.
 
 ### **Configuration**
 
 We first need to make sure that your car is properly defined, if not will need to create a custom entry.  
 ![](images/image99.png)
 
-If you own a US spec soft top you’re in luck since the entry is already defined for you don’t need to change. Europeans and Asians owners will need to tweak these values since their gear ratio is different which you can find in the [Transmission & Drivetrain] section.  
+If you own a US spec soft top you're in luck since the entry is already defined for you don't need to change. Europeans and Asians owners will need to tweak these values since their gear ratio is different which you can find in the [Transmission & Drivetrain] section.  
 ![](images/image34.png)
 
 Here is the configuration I use for my 2009 PRHT.  
@@ -353,7 +353,7 @@ Consistency:
 
 ### **Datalogging a pull**
 
-Datalogging is fairly simple but you want to make sure that you have the highest logging rate possible without any duplicate or choppiness in the logs, you want the data to be as smooth as possible. If you’re using the Tactrix OpenPort you can tweak the logging rate with [calc samples] and by keeping the amount of logged parameters to a minimum. I recommend that you create a logcfg.txt specific for that usage if you intend to do it often.
+Datalogging is fairly simple but you want to make sure that you have the highest logging rate possible without any duplicate or choppiness in the logs, you want the data to be as smooth as possible. If you're using the Tactrix OpenPort you can tweak the logging rate with [calc samples] and by keeping the amount of logged parameters to a minimum. I recommend that you create a logcfg.txt specific for that usage if you intend to do it often.
 
 *Required fields*:
 
@@ -369,16 +369,16 @@ Datalogging is fairly simple but you want to make sure that you have the highest
 * MAP or BOOST.
 * LOAD
 * KNOCKR
-* VCT and IMRC (if you’re tuning it).
-* ECT and IAT (important if you’re boosted).
+* VCT and IMRC (if you're tuning it).
+* ECT and IAT (important if you're boosted).
 
 The field above helps understand what was the state of the engine when you did the pull.
 
 ### **Executing the pull**
 
-That’s how I do it but you are free to come up with your own strategy. I recommend that you find a straight and flat piece of road, fuel tank full, windows up, top up, A/C off and as little wind as possible.
+That's how I do it but you are free to come up with your own strategy. I recommend that you find a straight and flat piece of road, fuel tank full, windows up, top up, A/C off and as little wind as possible.
 
-*Warning*: Think of others while you do this and do it when nobody’s around, you want to do it as safely as humanly possible.
+*Warning*: Think of others while you do this and do it when nobody's around, you want to do it as safely as humanly possible.
 
 * Make sure the engine is at a good operating temperature, neither too cold or too hot.
 * Start at 1500 RPM and gradually increase the throttle to reach full throttle at 2000 RPM. Doing so will provide a smoother transition and avoid a sharp change in AFR.
@@ -388,11 +388,11 @@ That’s how I do it but you are free to come up with your own strategy. I recom
 
 ### **Data prep/massaging**
 
-Before visualizing your data it’s highly recommended that you trim it to keep only the relevant part, doing so will make results cleaner and easier to interpret. This can be done quite easily with Excel, Google sheets or MegaLogViewerHD. Open the log, spot where APP went from 0 to a 100, remove any data before and once again where you let go of the throttle. Factually, you can keep a bit of data above and below where you went full throttle since Virtual Dyno will use APP or TP to determine the start and end of the pull.
+Before visualizing your data it's highly recommended that you trim it to keep only the relevant part, doing so will make results cleaner and easier to interpret. This can be done quite easily with Excel, Google sheets or MegaLogViewerHD. Open the log, spot where APP went from 0 to a 100, remove any data before and once again where you let go of the throttle. Factually, you can keep a bit of data above and below where you went full throttle since Virtual Dyno will use APP or TP to determine the start and end of the pull.
 
 ![](images/image132.png)
 
-Alternatively if you don’t want to do this trimming manually you can configure [triggers] to create data logs based on APP. eg: This should work
+Alternatively if you don't want to do this trimming manually you can configure [triggers] to create data logs based on APP. eg: This should work
 
 ```plaintext
 | ;--------------------------------------------------------------------------
@@ -406,24 +406,24 @@ trigger action: start condition: APP,100.000000,== |
 
 ### **Usage and data interpretation**
 
-Once you’re done acquiring data, it’s high time to enjoy the fruit of your labor. Start VirtualDyno, make sure the options are set up properly and your profile selected. Click on the data log you want to visualize, drag and drop it on VirtualDyno, if everything went well you should now see your pull. For the most part the result should be self explanatory, my only recommendation at this point is *add a bit of smoothing*, you shouldn’t have to go above 4, if you do then something is wrong with your data.
+Once you're done acquiring data, it's high time to enjoy the fruit of your labor. Start VirtualDyno, make sure the options are set up properly and your profile selected. Click on the data log you want to visualize, drag and drop it on VirtualDyno, if everything went well you should now see your pull. For the most part the result should be self explanatory, my only recommendation at this point is *add a bit of smoothing*, you shouldn't have to go above 4, if you do then something is wrong with your data.
 
 ![](images/image9.png)
 
-Take some time to explore the interface, there’s a few interesting things to discover like the ability to graph other columns which is very useful if you want to see what you MAF sensor reading was, how hot the engine and intake temperature were.  
+Take some time to explore the interface, there's a few interesting things to discover like the ability to graph other columns which is very useful if you want to see what you MAF sensor reading was, how hot the engine and intake temperature were.  
 ![](images/image98.png)
 
 ![](images/image62.png)
 
 ## **Mega Log Viewer HD**
 
-I’m still debating whether I’ll produce a “how to guide” for this software, finding a way to document it while keeping it simple is not an easy thing, it would be easier to show its usage in a Youtube video.
+I'm still debating whether I'll produce a “how to guide” for this software, finding a way to document it while keeping it simple is not an easy thing, it would be easier to show its usage in a Youtube video.
 
 # **Data logging**
 
 ![](images/image61.png)
 
-Data logging is the life and blood of tuning, you’ll be flying blind without it. The easiest way is to use the built-in logging capabilities of the Tactrix OpenPort unit, all that’s required is a MicroSD card with a logcfg.txt file at the root of the SD card.
+Data logging is the life and blood of tuning, you'll be flying blind without it. The easiest way is to use the built-in logging capabilities of the Tactrix OpenPort unit, all that's required is a MicroSD card with a logcfg.txt file at the root of the SD card.
 
 ## **The MicroSD card**
 
@@ -432,7 +432,7 @@ The MicroSD card requirements are:
 * Formatted in FAT16 or FAT32.
 * A max size of 4GB (FAT32 can do more than that).
 
-*Note:* It is possible use a card with more than 4GB but you’ll have to dig around to learn how to do that, I’m too lazy to do it for you 😄.
+*Note:* It is possible use a card with more than 4GB but you'll have to dig around to learn how to do that, I'm too lazy to do it for you 😄.
 
 ## **OpenPort logging configuration file (logcfg.txt)**
 
@@ -440,11 +440,11 @@ This text file tells the Tactrix OpenPort unit how and what to log, it contains 
 
 ### **Sample rate**
 
-Like your engine the Tactrix OpenPort unit can be *tuned* to run faster which has the benefit of providing more data points and greater resolution. However this is an act of balance since there’s a limit of how much pids you pull for a given amount of time. Eg: If you only log only a few pids you can really crank the sampling speed a lot and get incredible resolution, this particularly useful if you want to focus on a very specific topic like shifty35 did when tuning VCT or the FAB9 intake. For general purpose logging I prefer to log many parameters at a slower rate to get a better picture of the car/engine as a whole. [My current logcfg.txt allows me to log 20+ pids at 25 samples/sec or every 40ms.](https://drive.google.com/file/d/10B7pscLyvbnVy7532mHeGLWPmi-EUsU9/view?usp=sharing)
+Like your engine the Tactrix OpenPort unit can be *tuned* to run faster which has the benefit of providing more data points and greater resolution. However this is an act of balance since there's a limit of how much pids you pull for a given amount of time. Eg: If you only log only a few pids you can really crank the sampling speed a lot and get incredible resolution, this particularly useful if you want to focus on a very specific topic like shifty35 did when tuning VCT or the FAB9 intake. For general purpose logging I prefer to log many parameters at a slower rate to get a better picture of the car/engine as a whole. [My current logcfg.txt allows me to log 20+ pids at 25 samples/sec or every 40ms.](https://drive.google.com/file/d/10B7pscLyvbnVy7532mHeGLWPmi-EUsU9/view?usp=sharing)
 
 #### **Optimizing performance**
 
-Unfortunately there’s no rules or document that explains how fast you can log for a given set of parameters, the only way is through trial and error. The optimization process is done by simply decreasing **calcsampinterval** value until your logs start to show duplicate entries (RPM pid is a good pid for that).
+Unfortunately there's no rules or document that explains how fast you can log for a given set of parameters, the only way is through trial and error. The optimization process is done by simply decreasing **calcsampinterval** value until your logs start to show duplicate entries (RPM pid is a good pid for that).
 
 **calcsampinterval** is the parameter that controls that sampling speed. The table below gives a quick overview of the performance for different sampling values.
 
@@ -468,7 +468,7 @@ calcsampinterval = 2100
 | :----
 ```
 
-*Note:* Both sortpids and calcconstdelay affects the sampling speed and in both cases I found out that it’s faster to leave both commented.
+*Note:* Both sortpids and calcconstdelay affects the sampling speed and in both cases I found out that it's faster to leave both commented.
 
 #### **Sample groups**
 
@@ -477,11 +477,11 @@ additional parameter feature called sampgroup.
 
 sampgroups are numbered 1 through 15, the number simply being a label. All parameters in the same sampgroup will share a single time slot. The OP2 will determine how many of each sampgroup there are, build a cycle of that size, and phase each of them properly. This allows you to have different groups of low speed parameters, running at different speeds, each optimally using the sample cycle.
 
-Take a look at the log file link above and you’ll see how I’ve grouped things.
+Take a look at the log file link above and you'll see how I've grouped things.
 
 ### **Calculated fields**
 
-Calculated fields add a convenient way to manipulate data and create new fields based on values already available. Eg: Like displayed below I’m calculating AFR, combined fuel trims, fuel injector duty cycle, etc.
+Calculated fields add a convenient way to manipulate data and create new fields based on values already available. Eg: Like displayed below I'm calculating AFR, combined fuel trims, fuel injector duty cycle, etc.
 
 Calculated fields can also be done in Mega Log Viewer HD but this method has the advantage of making the values readily available in the logs files which is very convenient if you open them in any other applications like Excel for example.
 
@@ -514,7 +514,7 @@ scalingrpn = INTAKE_TEMP,AAT,- |
 
 ### **Mode 23**
 
-CAN mode 23 is used to read raw data by address from the ECU memory. This is useful only if you know exactly where the data stored and currently only speeps has that ability. As far as I know there’s only a handful of memory addresses that've been shared, the most common being [uncorrected load](https://github.com/speepsio/romdrop/wiki/Uncorrected-Load-RAM-Addrs). On top of it mode 23 is significantly slower than querying standard PIDS. If you’re using mode 23 you most likely know what you’re doing.
+CAN mode 23 is used to read raw data by address from the ECU memory. This is useful only if you know exactly where the data stored and currently only speeps has that ability. As far as I know there's only a handful of memory addresses that've been shared, the most common being [uncorrected load](https://github.com/speepsio/romdrop/wiki/Uncorrected-Load-RAM-Addrs). On top of it mode 23 is significantly slower than querying standard PIDS. If you're using mode 23 you most likely know what you're doing.
 
 ```plaintext
 | ;-----[ uds setup (rom patch REQUIRED for mode 0x23 functionality) ]
@@ -528,7 +528,7 @@ mode23rxaddrwidth = 0 |
 
 ### **Triggers**
 
-Triggers can be useful if you want to start/stop datalogging based on specific criteria, eg: You can log only when going wide open throttle with APP, 100, ==. I don’t use triggers since I prefer to datalog all the time and use MegaLogViewer HD to filter what I want.
+Triggers can be useful if you want to start/stop datalogging based on specific criteria, eg: You can log only when going wide open throttle with APP, 100, ==. I don't use triggers since I prefer to datalog all the time and use MegaLogViewer HD to filter what I want.
 
 ```plaintext
 | ;--------------------------------------------------------------------------
@@ -542,7 +542,7 @@ trigger action: start condition: APP,100.000000,== |
 
 ### **Monitoring external sensors**
 
-[OpenPort allows to datalog external sensors using the 3/32” jack](https://www.tactrix.com/index.php?option=com_content&view=article&id=76:what-are-pinout-and-pin-functions-of-the-openport-20&catid=39:openport-20&Itemid=41). One of the advantages of this input is that it doesn’t impact the OpenPort unit performance as it doesn’t actively query the ECU, it simply monitors the signal coming in. Use the ascii type with an arduino and you can datalog as many sensors as you like (read below to learn more).
+[OpenPort allows to datalog external sensors using the 3/32” jack](https://www.tactrix.com/index.php?option=com_content&view=article&id=76:what-are-pinout-and-pin-functions-of-the-openport-20&catid=39:openport-20&Itemid=41). One of the advantages of this input is that it doesn't impact the OpenPort unit performance as it doesn't actively query the ECU, it simply monitors the signal coming in. Use the ascii type with an arduino and you can datalog as many sensors as you like (read below to learn more).
 
 It offers 3 type:
 
@@ -630,35 +630,35 @@ scalingrpn = x,14.7,*  ; scale to an AFR |
 ### **Troubleshooting**
 
 * Unable to get log files generate
-  You won’t be able to log if you try to log a PID that does not exist, eg: if you try to log VCT and you have 1.8l without VCT you won’t get any error but it’ll also refuse to generate log files.
+  You won't be able to log if you try to log a PID that does not exist, eg: if you try to log VCT and you have 1.8l without VCT you won't get any error but it'll also refuse to generate log files.
 
 # **Tuning**
 
 ## **Getting started**
 
-I’ve created a sample tuning logbook to help you track your changes, [download it](https://docs.google.com/spreadsheets/d/1X2YY6cwB-SjK6lR59vhpwGapkbHgxjgA/edit?usp=sharing&ouid=104952744114399565915&rtpof=true&sd=true) and use it every time you make a tune.
+I've created a sample tuning logbook to help you track your changes, [download it](https://docs.google.com/spreadsheets/d/1X2YY6cwB-SjK6lR59vhpwGapkbHgxjgA/edit?usp=sharing&ouid=104952744114399565915&rtpof=true&sd=true) and use it every time you make a tune.
 
 ### **The golden rules**
 
-* Is it in good running condition? I’ve mentioned it before but I cannot overstate that point, make sure your car is running well. What’s the point of tuning a car that’s stuttering or bucking?
+* Is it in good running condition? I've mentioned it before but I cannot overstate that point, make sure your car is running well. What's the point of tuning a car that's stuttering or bucking?
 
-* Know your car. Once you start changing parts and tuning it there’s going to be a point where you will need to know if the engine behavior is normal or not. Believe me every rattle, unexpected sounds and even bump on the road can play tricks on your mind if you don’t know your car before you start.
+* Know your car. Once you start changing parts and tuning it there's going to be a point where you will need to know if the engine behavior is normal or not. Believe me every rattle, unexpected sounds and even bump on the road can play tricks on your mind if you don't know your car before you start.
 
-* Data logs the life of your car in every possible condition possible.eg: Highway cruising, driving around town, idle, cold/hot weather (within reason), WOT pulls, even different fuel stations. If your car isn’t stock, consider getting it back to stock before data logging. Save these files previously somewhere safe, they’ll serve as a reference and teach you how a OEM setup behaves.
+* Data logs the life of your car in every possible condition possible.eg: Highway cruising, driving around town, idle, cold/hot weather (within reason), WOT pulls, even different fuel stations. If your car isn't stock, consider getting it back to stock before data logging. Save these files previously somewhere safe, they'll serve as a reference and teach you how a OEM setup behaves.
 
 * Change one thing at the time whenever possible, both on the physical side and software side. This is my personal favorite, changing too many things at the same time is the equivalent of “haste is waste”.
 
-  *Note*: I understand that it's easier to install a new exhaust and cams while swapping a 2.5. Don’t worry, it’s doable, it’s just a bit harder.
+  *Note*: I understand that it's easier to install a new exhaust and cams while swapping a 2.5. Don't worry, it's doable, it's just a bit harder.
 
 * Tune with purpose, changing things randomly is just a waste of time, when you change parameters yo...(truncated 87775 characters)... the fly has a low value. Let's pretend you have a 91 tune and another for race fuel. Now can switch between those by blending 0% for the 91 tune and 100% for the race fuel, again on the fly.
 
-This functionality was originally developed for the flex fuel users, in their case the blending happens automatically provided that they use a [flex fuel kit like this one](https://fab9tuning.com/flex-fuel-integration-kit-nc-oem-ecu-romdrop-ecutek-and-me442/). Basically, the flex fuel sensor senses the ethanol content and broadcasts the value over CAN bus which is then used by the ECU to blend the standard 91 tables with the percentage of ethanol measured, this allows you to use anything from E10 to  E85. It’s a bit of an oversimplification but you get the idea. Use the [Flex fuel topic] to learn more about it.
+This functionality was originally developed for the flex fuel users, in their case the blending happens automatically provided that they use a [flex fuel kit like this one](https://fab9tuning.com/flex-fuel-integration-kit-nc-oem-ecu-romdrop-ecutek-and-me442/). Basically, the flex fuel sensor senses the ethanol content and broadcasts the value over CAN bus which is then used by the ECU to blend the standard 91 tables with the percentage of ethanol measured, this allows you to use anything from E10 to  E85. It's a bit of an oversimplification but you get the idea. Use the [Flex fuel topic] to learn more about it.
 
 #### **How to setup blending**
 
 ##### **Preparations**
 
-We need to turn off blending for the following tables to ensure we don’t blend them unexpectedly. Technically the [Flex] tables should have the same values as their pair but why leave it to chance ?
+We need to turn off blending for the following tables to ensure we don't blend them unexpectedly. Technically the [Flex] tables should have the same values as their pair but why leave it to chance ?
 
 Short version, set everything to 0 except **Fuel IPW - Base** > **IPW - Base - Ethanol scaling** which you set to 1.
 
@@ -685,7 +685,7 @@ Under **Engine Control - Manual Blend** set these tables:
 
 * Activation: Turn manual blend by setting the value to 1.
 * Activation delay: Default is 255 or 6.7s or 26ms for 1. Eg: 100 = 2600 ms = 2.6s. I've set mine to 80 ~= 2s. That's the amount of time you'll have to hold the cruise control cancel button to enter manual blending mode.
-* Step size: A step is applied each time you push Cruise control up or down. The value 5 means you’ll have 20 steps available, eg: 5, 10, 15, 20 … 100. I personally use an increment of 10% or 10 steps to reach 100%. The Speedometer is used to display the currently configured value.
+* Step size: A step is applied each time you push Cruise control up or down. The value 5 means you'll have 20 steps available, eg: 5, 10, 15, 20 … 100. I personally use an increment of 10% or 10 steps to reach 100%. The Speedometer is used to display the currently configured value.
 
   [You can see it in action here](https://www.facebook.com/groups/romdrop/permalink/434905370856277).
 
@@ -693,7 +693,7 @@ Under **Engine Control - Manual Blend** set these tables:
 
 Under **Instrument Cluster - Speedometer**
 
-* Blend display format. Set to 1 *if your cluster is in MPH* otherwise the step size won’t match what you see.
+* Blend display format. Set to 1 *if your cluster is in MPH* otherwise the step size won't match what you see.
   ![](images/image118.png)
 
 #### **How to blend VCT**
@@ -708,7 +708,7 @@ Eg: I chose 6 steps (0, 20%, 40%, 60%, 80%, 100%) to reach a 100 % [Flex] VCT Ta
 
 Hopefully the image below will make it easier to understand:  
 ![](images/image13.png)  
-*Note*: In retrospect I would not set VCT to a fixed value below 0.375 load since you’ll most likely want to tune only the WOT region, the cruising region would require a load bearing dyno under steady state to have any sort of meaningful value.
+*Note*: In retrospect I would not set VCT to a fixed value below 0.375 load since you'll most likely want to tune only the WOT region, the cruising region would require a load bearing dyno under steady state to have any sort of meaningful value.
 
 For VCT, the right way to get an idea of what the engine wants is to compare LOAD between runs which is the way Shifty35 did it, basically he makes a boat load of WOT pull for the same angle and average the result, this method uses quantity over quality. You can also get a rough idea with Virtual Dyno but your ECT, IAT, Timing and Knock need to be identical to get good results which is harder to do, this method is quality over quantity.
 
@@ -717,13 +717,13 @@ This is what it looks like in Virtual Dyno:
 
 This was a rough draft designed to serve as an example and as you can see the crossover points between each VCT angles are not super easy to identify. On a real dyno the image would be crystal clear.
 
-*Note:* Don’t forget to disable manual blending once you're done and flash a normal ROM back, your engine wasn’t designed to run fixed VCT values all the time.
+*Note:* Don't forget to disable manual blending once you're done and flash a normal ROM back, your engine wasn't designed to run fixed VCT values all the time.
 
 #### **How to blend Spark / Ignition timing**
 
 Under **Spark target - Base**
 
-* [Flex] Spark Target | High Fuel Demand, Low-Det - Set the desired cells to the maximum value you’d like to reach at 100% blend.
+* [Flex] Spark Target | High Fuel Demand, Low-Det - Set the desired cells to the maximum value you'd like to reach at 100% blend.
 * [Flex] Spark Target Blend - Set the blend increment (default is 10%).
 
 Spark tuning uses the same concept as VCT. eg: you have a base table and a target table which is your [Flex] table. Increment are done in step of 10% and I've chose to add 10* over the base table so that each step is going to increase timing by 1*. The cells in the red rectangles are blended to smooth out the transition there surrounding cells. You can easily do this by interpolating the values vertically (column) with V shortcut and horizontally with H shortcut.
@@ -732,7 +732,7 @@ Spark tuning uses the same concept as VCT. eg: you have a base table and a targe
 
 Under **Spark Limit - Base**
 
-* [Flex] Spark Target | OL - Set the desired cells to the maximum value you’d like to reach at 100% blend.
+* [Flex] Spark Target | OL - Set the desired cells to the maximum value you'd like to reach at 100% blend.
 * [Flex] Spark Target Blend - Set the blend increment (default is 10%).
 
   *IMPORTANT:* As of 2025-03-08 the **Spark Limit | OL table** (previously named high fuel request) is flipped with the **Spark Limit | CL** (previously named low fuel request). Either you change the name of the table yourself or you will need to change timing in the CL table when tuning OL. Speeps is aware of this and it will get fixed.
@@ -745,7 +745,7 @@ Under **Spark Limit - Base**
 
 ### **CAMs**
 
-Installing CAMs with a longer duration will change your engine behavior and to make the most of it you’ll have to change a few things.
+Installing CAMs with a longer duration will change your engine behavior and to make the most of it you'll have to change a few things.
 
 **Idle**  
 Aggressive CAMs will require that you raise your idle to improve drivability and road manners.
@@ -762,7 +762,7 @@ Under **Idle speed**:
 CAMs change the volumetric efficiency (VE) foot print of your engine and require that you [tune your load scaling table] to get your fuel tracking under control.
 
 **Spark timing / VCT / IMTV**  
-CAMs change the VE of your engine which means it’s going to pump more air in some areas and less in others, usually it implies that you’ll have to [tune spark timing, VCT and IMTV] to make the most of it. The only way to do it properly is on Dyno or alternatively with [VirtualDyno].
+CAMs change the VE of your engine which means it's going to pump more air in some areas and less in others, usually it implies that you'll have to [tune spark timing, VCT and IMTV] to make the most of it. The only way to do it properly is on Dyno or alternatively with [VirtualDyno].
 
 ### **2.5 Swap**
 
@@ -781,13 +781,13 @@ CAMs change the VE of your engine which means it’s going to pump more air in s
 
 #### **Boost by gear for the famished**
 
-I highly recommend that you install a good EBC but you can use DBW to limit the amount of boost generated in the desired gears. Eg: let’s say you have a 15 PSI wastegate which is too much for first and second gear, you can just limit the throttle opening to 30% and that will limit how much boost and torque is generated.
+I highly recommend that you install a good EBC but you can use DBW to limit the amount of boost generated in the desired gears. Eg: let's say you have a 15 PSI wastegate which is too much for first and second gear, you can just limit the throttle opening to 30% and that will limit how much boost and torque is generated.
 ![](images/image101.png)
 
-This can also be used to limit the boost in high gear and at low RPM, this can be useful if you’re trying to limit torque at low RPM or lugging the engine.  
+This can also be used to limit the boost in high gear and at low RPM, this can be useful if you're trying to limit torque at low RPM or lugging the engine.  
 ![](images/image82.png)
 
-You’ll need to plot boost VS throttle opening to figure out the throttle opening values to obtain a specific amount of boost as it is not linear. As shown below I could generate nearly 10 PSI with the throttle body only open to 30%.  
+You'll need to plot boost VS throttle opening to figure out the throttle opening values to obtain a specific amount of boost as it is not linear. As shown below I could generate nearly 10 PSI with the throttle body only open to 30%.  
 ![](images/image36.png)
 
 ## **Tuning for power (Mo Powa Babeh)**
@@ -799,7 +799,7 @@ Gaining HP mostly depends on [AFR], [Spark / ignition timing] and [VCT] and [IMT
 
 ### **Tuning - AFR**
 
-There’s not a lot of way to tune AFR for power, if you’re Naturally Aspirated then dialing 12.5 AFR or 0.85 Lambda will most likely lend you the best power output, forced induction is a whole other creature which deserves its own topic.
+There's not a lot of way to tune AFR for power, if you're Naturally Aspirated then dialing 12.5 AFR or 0.85 Lambda will most likely lend you the best power output, forced induction is a whole other creature which deserves its own topic.
 
 *Warning*: Before tuning AFR you should make sure your trims are in check, eg: no more than -5/+5. If your trims are too off you might end up being too lean.
 
@@ -810,14 +810,14 @@ Under **Fuel Target OL - BASE** set
 * APP Below WOT to desired target.
 * APP Above WOT to desired target.
 
-Long story short, **APP below WOT** addresses mostly closed loop (cruising around town or highway) while **APP above WOT** refers to mashing the throttle, let’s focus on the latter for now.
+Long story short, **APP below WOT** addresses mostly closed loop (cruising around town or highway) while **APP above WOT** refers to mashing the throttle, let's focus on the latter for now.
 
 Eg: A tuned version for an NA build on pump gas could look like the table on the right. Note the transition from 0.884 to 0.85 (12.5 AFR). Whenever making changes always make sure to have a smooth transition, both the engine and ECU will benefit from it.
 
 ![](images/image79.png)  
 *Left = Stock | Right = Tuned*
 
-Same table as above but in a more convenient format. This is a test for now, the goal would be to allow you to simply copy and paste the values but it doesn’t work for some reason.
+Same table as above but in a more convenient format. This is a test for now, the goal would be to allow you to simply copy and paste the values but it doesn't work for some reason.
 
 |  |  | TP |  |  |  |  |  |  |  |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -838,7 +838,7 @@ Same table as above but in a more convenient format. This is a test for now, the
 |  | **7000** | 0.850 | 0.850 | 0.850 | 0.850 | 0.850 | 0.850 | 0.850 | 0.850 |
 |  | **7500** | 0.850 | 0.850 | 0.850 | 0.850 | 0.850 | 0.850 | 0.850 | 0.850 |
 
-The proper thing to do is to confirm that your change had the desired effect, this requires that you either spend some time on a Dyno or use [Virtual Dyno]. That being said, on a totally stock 2.0l you’ll only gain a handful of HP and in a narrow band.
+The proper thing to do is to confirm that your change had the desired effect, this requires that you either spend some time on a Dyno or use [Virtual Dyno]. That being said, on a totally stock 2.0l you'll only gain a handful of HP and in a narrow band.
 
 ### **Tuning - VCT / VVT**
 
@@ -860,12 +860,12 @@ Top is stock OEM, bottom is what I was running on my 2.0L, this has not been opt
 This is what I run my 2.5, this has not been optimized on the dyno so its quality remains to be proven.  
 ![](images/image112.png)
 
-This one is from Justin Gavin race car which runs a completely stock 2.5 which was apparently tuned by someone reputable. I’ll admit it’s an interesting tune and I’ll give it a try once summer is back.  
+This one is from Justin Gavin race car which runs a completely stock 2.5 which was apparently tuned by someone reputable. I'll admit it's an interesting tune and I'll give it a try once summer is back.  
 ![](images/image115.png)
 
 ### **Tuning - Spark / ignition timing**
 
-The most effective way to tune ignition timing is by using blending as described in [How to blend Spark / Ignition timing]. However in this case there’s more involved than simply doing WOT pulls at different ignition angles.This is one of the topics I’ve spent a lot of time on and still find difficult, not because of its complexity but because it’s hard to get repeatable results with a tool like Virtual Dyno, an N/A car won’t have a huge power delta which can make it hard to tell if you’re getting any gains at all, a Turbo car can have huge power Delta but can be impacted greatly by heat soak, a bad tank of fuel, external air temperature, etc. That being said, you can get a good road tune but to get great results you'll have to get your car strap to a dyno.
+The most effective way to tune ignition timing is by using blending as described in [How to blend Spark / Ignition timing]. However in this case there's more involved than simply doing WOT pulls at different ignition angles.This is one of the topics I've spent a lot of time on and still find difficult, not because of its complexity but because it's hard to get repeatable results with a tool like Virtual Dyno, an N/A car won't have a huge power delta which can make it hard to tell if you're getting any gains at all, a Turbo car can have huge power Delta but can be impacted greatly by heat soak, a bad tank of fuel, external air temperature, etc. That being said, you can get a good road tune but to get great results you'll have to get your car strap to a dyno.
 
 *Warning:* Be extra careful when playing with these tables, messing up your timing can damage your engine more than most other tunable components can.
 
@@ -913,7 +913,7 @@ So before, at a 7000 RPM 1-2 shift, 2-3 shift, 3-4 shift, the long runners would
 
 #### **Results**
 
-There’s two ways to evaluate if the new crossover points are optimal.
+There's two ways to evaluate if the new crossover points are optimal.
 
 ##### **Using a dyno (or [Virtual Dyno]).**
 
@@ -929,7 +929,7 @@ Not a typical setup but a valid datapoint by Brian Axup. Below you can see the e
 
 ##### **Using LOAD**
 
-A higher load means there’s more air entering the engine and more air means more power. As can be seen in the example below the dip centered at 5000 is greatly reduced.  
+A higher load means there's more air entering the engine and more air means more power. As can be seen in the example below the dip centered at 5000 is greatly reduced.  
 ![](images/image33.png)
 
 Other reference: [DIY Tuner - Raise your IMTV for free power](https://forum.miata.net/vb/showthread.php?t=758990).
@@ -952,7 +952,7 @@ Stock 2.0l injectors are rated
 
 ## **Engines**
 
-This whole block is from [Roadster.blog](https://www.roadster.blog/2013/05/roadster-engines.html), full credits goes to the owner. I’ve decided to copy it in its entirety because it’s well written and covers the basics.
+This whole block is from [Roadster.blog](https://www.roadster.blog/2013/05/roadster-engines.html), full credits goes to the owner. I've decided to copy it in its entirety because it's well written and covers the basics.
 
 ![](images/image48.jpg)  
 The MZR engine and its implementation in the Roadster is noteworthy.  The engine is an aluminium block and head with iron cylinder liners.   The double overhead camshafts are driven by a chain rather than a belt. The engine also features molybdic coated anti-friction pistons, variable valve timing on the intake side, electronic sequential fuel injection, and a coil-on-plug ignition system. Engines in all markets use a compression ratio of 10.8:1 and a stroke of 83.1mm. The bore on the 2.0 is 87.5mm and 83.0mm for the 1.8 litre version.
@@ -1169,9 +1169,9 @@ C = **Spark** Emissions Comp EGR Advance
 
 ### **Logging**
 
-Mode 23 KR is the real value, and mode 22 KR is the approximation. The truth is the ecu increments KR by 0.35, and decrements by 0.17 if I remember correctly... but Mode 22 only uses multiples of 0.35, so that’s why you see a difference.
+Mode 23 KR is the real value, and mode 22 KR is the approximation. The truth is the ecu increments KR by 0.35, and decrements by 0.17 if I remember correctly... but Mode 22 only uses multiples of 0.35, so that's why you see a difference.
 
-btw, mode 22 should be faster since it’s only one byte vs four bytes... That said, mode 23 is super useful when it comes to figuring stuff out.
+btw, mode 22 should be faster since it's only one byte vs four bytes... That said, mode 23 is super useful when it comes to figuring stuff out.
 
 ### **Reset**
 
@@ -1343,14 +1343,14 @@ Apparently this one is from Mazda 3 and the first table would be for CL and the 
 
 #### **Port matching the aluminum MX5 intake runners to the 2.5L head**
 
-Long story short there’s no benefit.
+Long story short there's no benefit.
 
 [Facebook post from Brian Axup](https://www.facebook.com/groups/2006740659573188/permalink/3124469301133646/)  
 *For all the guys who have been wondering about the benefits from port matching the aluminum MX5 intake runners to the 2.5L head…*  
 *We just did a back to back test today .*
 *Red = not matched*  
 *Black = welded & port matched*  
-*Both manifold setups were run with the same ignition advance as well as a pretty darn close fuel curve as you can see in the AFR chart.  The mapping is not set on kill, it’s setup so it can be repeatable for testing.*  
+*Both manifold setups were run with the same ignition advance as well as a pretty darn close fuel curve as you can see in the AFR chart.  The mapping is not set on kill, it's setup so it can be repeatable for testing.*  
 *Hope you all enjoy data!*  
 ![](images/image11.png)
 
