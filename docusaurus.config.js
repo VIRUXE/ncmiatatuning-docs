@@ -105,7 +105,7 @@ const config = {
               },
               {
                 label: 'MX5 Owner manual',
-                href: '2008-mx-5-owners-manual.pdf',
+                href: 'https://github.com/VIRUXE/ncmiatatuning-docs/blob/main/static/2008-mx-5-owners-manual.pdf',
               },
             ],
           },
