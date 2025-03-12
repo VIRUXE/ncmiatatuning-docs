@@ -101,11 +101,11 @@ const config = {
             items: [
               {
                 label: 'OEM ROMs',
-                to: '/roms',
+                href: 'https://github.com/VIRUXE/ncmiatatuning-docs/tree/main/static/roms',
               },
               {
                 label: 'MX5 Owner manual',
-                href: 'https://ncmiatatuning.s3.us-east-2.amazonaws.com/2008-mx-5-owners-manual.pdf',
+                href: '2008-mx-5-owners-manual.pdf',
               },
             ],
           },
