@@ -49,10 +49,9 @@ const config = {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/VIRUXE/ncmiatatuning-docs/tree/main/docs/',
+          editUrl: 'https://github.com/VIRUXE/ncmiatatuning-docs/tree/main/',
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
-          sidebar: false, // Disable the sidebar
         },
         blog: false,
         theme: {
@@ -66,6 +65,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
     //   image: 'img/docusaurus-social-card.jpg',
+	  docs: {
       navbar: {
         title: 'RomDrop Tuning Guide',
         hideOnScroll: true,
