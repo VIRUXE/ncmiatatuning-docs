@@ -24,8 +24,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'VIRUXE', // Usually your GitHub org/user name.
+  projectName: 'ncmiatatuning-docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -63,8 +63,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+    //   image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'RomDrop Tuning Guide',
         hideOnScroll: true,
