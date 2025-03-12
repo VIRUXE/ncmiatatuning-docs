@@ -66,6 +66,11 @@ const config = {
     ({
     //   image: 'img/docusaurus-social-card.jpg',
 	  docs: {
+		sidebar: {
+			hideable: true,
+			autoCollapseCategories: false,
+		},
+	  },
       navbar: {
         title: 'RomDrop Tuning Guide',
         hideOnScroll: true,
