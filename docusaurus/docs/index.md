@@ -3,11 +3,11 @@
 
 RomDrop edition
 
-![](images/image128.png)
+![](/images/image128.png)
 
 This document wouldn't exist without Speeps which single handedly reversed engineered our NC ECU and built RomDrop.
 
-* Thank you Speeps
+<div align="center">Thank you Speeps</div>
 
 * Noteworthy individuals
 
@@ -15,9 +15,6 @@ This document wouldn't exist without Speeps which single handedly reversed engin
   * VTECKiller - Moderator of the Facebook Group, constantly supports and helps everyone, probably has the most experience building and tuning 2.5.
   * Shifty35 - Probably the most knowledgeable individual of the group and also constantly supports and helps everyone.
   * NyxOne - That's me! 😁Don't hesitate to [contact me](mailto:dufresne.charles@gmail.com).
-
-* About this document  
-I've chosen this format for its ease of use and because it can be easily [downloaded offline](https://docs.google.com/document/d/1b4rhyg6aVLKPjBcbVLuTv8BVeTrC8zoHCeKqxaaMyYw/edit?usp=sharing) on your phone or computer, printed and even [displayed as a website](http://ncmiatatuning.s3-website.us-east-2.amazonaws.com/index.html).
 
 # **READ ME (seriously)**
 
@@ -86,7 +83,7 @@ Make sure your car is in good running condition. Don't be stupid and try to tune
 
 ## **Don't know where to start ?**
 
-Let me help you! You are here  >   *   <
+Let me help you! You are here  \>   *   \<
 
 Seriously though, here's my recommendations:
 
@@ -155,7 +152,7 @@ Seriously though, here's my recommendations:
 ### **Installation**
 
 [Download](https://github.com/speepsio/romdrop/archive/refs/heads/master.zip) and unzip the files in a meaningful directory that's easily accessible. This is what you should expect to find once unzipped.  
-![](images/image59.png)
+![](/images/image59.png)
 
 ### **Files and directories**
 
@@ -188,7 +185,7 @@ Seriously though, here's my recommendations:
 * Double click romdrop.exe to execute from windows.
   * If this is your first time using RomDrop Windows will throw a warning, ignore it and proceed.
   * You'll also have to Accept RomDrop's agreement.
-* Or execute from command line: romdrop.exe <filename.ext>
+* Or execute from command line: romdrop.exe \<filename.ext\>
 
 ### **Disconnection procedure**
 
@@ -204,13 +201,13 @@ Please be aware that ROMs created with a RomDrop's metadata version need to be o
 * Stock ROMs can be open with any versions with no ill effect.
 * Upgrading a tune to a newer version of RomDrop implies that you'll have to start from a stock ROM and manually reapply every change you've made.
 * Identifying a version can be done with RomDrop *Version for ROM* function.
-  ![](images/image111.png)
+  ![](/images/image111.png)
 * ROMs shared might not use the same version as yours, EcuFlash will open it even if the metadata doesn't match.
 * Mismatched version looks like the example below,
   * the first table has bunch of NaN (Not a Number)
   * the second table has values all over the place.
 
-  ![](images/image130.png)
+  ![](/images/image130.png)
 
 ### **Associate rom's file extension**
 
@@ -218,7 +215,7 @@ You can associate a rom's file extension (typically .bin) with ROMDrop, afterwhi
 
 ## **EcuFlash - Setup and usage**
 
-EcuFlash is the platform we use to visualize and edit the parameters that are used by ECU, to modify these parameters is where the “tuning” process takes place.
+EcuFlash is the platform we use to visualize and edit the parameters that are used by ECU, to modify these parameters is where the "tuning" process takes place.
 
 ### **Metadata (aka the ROM's definition)**
 
@@ -226,53 +223,53 @@ Before you can open a ROM you'll have to tell EcuFlash where those the metadata 
 
 A ROM's metadata tells EcuFlash what maps are available, where the data is located in the ROM and how to interpret it. Think of it like a map for driving around town identifying the roads, buildings, etc. A chunkable size of what is considered reverse engineering an ECU comes down to opening an ROM without definition, identifying the maps inside and building a metadata file to be able to interpret and modify its content. This work was done by Speeps**.
 
-**File > Options > Metadata Directory > Metadata Directory > … > Select <RomDrop's directory>/metadata directory**.  
-![](images/image10.png)
+**File > Options > Metadata Directory > Metadata Directory > … > Select \<RomDrop's directory\>/metadata directory**.  
+![](/images/image10.png)
 
 ### **Color map**
 
 The default color map is a bit intense and hard to read, therefore it's highly recommended to use the scoobyrom color map.
 
 Like the metadata files you'll need to tell EcuFlash where those color map are located which also happen to be in RomDrop's directory.  
-**File > Options > Color Map Directory > …  > Select <RomDrop's directory>/colormap directory**.
+**File > Options > Color Map Directory > …  > Select \<RomDrop's directory\>/colormap directory**.
 
 Once done you should be able to change the default color map.  
 **File > Options > Default Color Map > scoobyrom.map**  
-![](images/image73.png)
+![](/images/image73.png)
 
 ### **User level (affect which maps are displayed)**
 
 If you're not finding a map, chances are they are currently filtered out by your current User Level. If you don't know what you're doing, leave it as is, if you want to see all the tables switch it to Developer.
 **File > Options > User Level > Level of user** (dropdown)  
-![](images/image13.png)
+![](/images/image13.png)
 
 Standard maps will appear in black while advanced maps will show up in blue.  
-![](images/image129.png)
+![](/images/image129.png)
 
 ### **Identify recently modified parameters**
 
 The table will be taken a pink color and the modified cells will have borders around them, only applicable if the ROM or EcuFlash weren't closed.  
-![](images/image119.png)
+![](/images/image119.png)
 
 ### **Compare two ROMs.**
 
 Comparing ROMs is an invaluable tool as it allows you to easily spot differences, eg: you can diff your current tune with the previous and easily spot what changes you've made.
 
 Open two ROMs, click File > Compare ROMs  
-![](images/image40.png)
+![](/images/image40.png)
 
 A summary of the comparison will be displayed in the Task Info console.
 
 *Note:* There's a small bug that makes some tables always appear as if they've been changed when they're not, eg: After Start Enrichment …  
-![](images/image96.png)
+![](/images/image96.png)
 
 Tables with changes will take a blue color and modified cells will be highlighted as can be seen below.
-![](images/image13.png)
+![](/images/image13.png)
 
 ### **Graph view**
 
 Graph view can help spot mistakes or values that stand out. Eg:  
-![](images/image7.png)
+![](/images/image7.png)
 
 ### **Increment, Decrement, Multiply, Interpolate**
 
@@ -287,12 +284,12 @@ These shortcuts might differ on your computer so you'll have to experiment.
 * Multiply: Multiply by a desired amount. (*Shortcut*: *Shift* and *** followed by desired value). Eg: If you want to add 2% to some cells of your load scaling table then you would multiply by 1.02, to substrack 2% you would multiply by 0.98.
 * Interpolate Vertically (*Shortcut*: *v*), Interpolate Horizontally (*Shortcut*: *h*), Interpolate 2-D (*Shortcut*: *b*). Interpolation greatly helps smoothing tables, curves, etc.
 
-  ![](images/image77.png)
+  ![](/images/image77.png)
 
 ## **Virtual Dyno - Setup and usage**
 
 Virtual Dyno is a tool to visualize the power output of your engine, it's far from perfect but it can get you in the ballpark and give you a fairly good idea if and where changes made to the engine and/or tune affected the power output.
-![](images/image124.png)  
+![](/images/image124.png)  
 *Blue = Stock 2.0L tuned | Red = Turbo 2.5L (94 octane + WMI)*
 
 ### **Before you start**
@@ -308,28 +305,28 @@ There's a few important details you should know:
 ### **Configuration**
 
 We first need to make sure that your car is properly defined, if not will need to create a custom entry.  
-![](images/image99.png)
+![](/images/image99.png)
 
 If you own a US spec soft top you're in luck since the entry is already defined for you don't need to change. Europeans and Asians owners will need to tweak these values since their gear ratio is different which you can find in the [Transmission & Drivetrain] section.  
-![](images/image34.png)
+![](/images/image34.png)
 
 Here is the configuration I use for my 2009 PRHT.  
-![](images/image52.png)
+![](/images/image52.png)
 
 #### **Profiles**
 
 Profiles allow to preconfigure gear used, tire height, car weight, occupant weight and final drive ratio. It just makes it easier to work with VirtualDyno.  
-![](images/image43.png)  
-![](images/image24.png)
+![](/images/image43.png)  
+![](/images/image24.png)
 
 #### **System options**
 
-![](images/image60.png)
+![](/images/image60.png)
 
-You will need to tweak the “Columns and Profiles” so that the column specified matches the one you have in your log files. Below are the values that I currently use, both boost and AFR are [calculated fields].
+You will need to tweak the "Columns and Profiles" so that the column specified matches the one you have in your log files. Below are the values that I currently use, both boost and AFR are [calculated fields].
 
 *Tip:* You can put any other field of your liking, eg: I commonly use SPARKADV in the AFR column to see be able to visualise timing during the pull  
-![](images/image8.png)
+![](/images/image8.png)
 
 ### **Datalogging quality data**
 
@@ -390,7 +387,7 @@ That's how I do it but you are free to come up with your own strategy. I recomme
 
 Before visualizing your data it's highly recommended that you trim it to keep only the relevant part, doing so will make results cleaner and easier to interpret. This can be done quite easily with Excel, Google sheets or MegaLogViewerHD. Open the log, spot where APP went from 0 to a 100, remove any data before and once again where you let go of the throttle. Factually, you can keep a bit of data above and below where you went full throttle since Virtual Dyno will use APP or TP to determine the start and end of the pull.
 
-![](images/image132.png)
+![](/images/image132.png)
 
 Alternatively if you don't want to do this trimming manually you can configure [triggers] to create data logs based on APP. eg: This should work
 
@@ -408,20 +405,20 @@ trigger action: start condition: APP,100.000000,== |
 
 Once you're done acquiring data, it's high time to enjoy the fruit of your labor. Start VirtualDyno, make sure the options are set up properly and your profile selected. Click on the data log you want to visualize, drag and drop it on VirtualDyno, if everything went well you should now see your pull. For the most part the result should be self explanatory, my only recommendation at this point is *add a bit of smoothing*, you shouldn't have to go above 4, if you do then something is wrong with your data.
 
-![](images/image9.png)
+![](/images/image9.png)
 
 Take some time to explore the interface, there's a few interesting things to discover like the ability to graph other columns which is very useful if you want to see what you MAF sensor reading was, how hot the engine and intake temperature were.  
-![](images/image98.png)
+![](/images/image98.png)
 
-![](images/image62.png)
+![](/images/image62.png)
 
 ## **Mega Log Viewer HD**
 
-I'm still debating whether I'll produce a “how to guide” for this software, finding a way to document it while keeping it simple is not an easy thing, it would be easier to show its usage in a Youtube video.
+I'm still debating whether I'll produce a "how to guide" for this software, finding a way to document it while keeping it simple is not an easy thing, it would be easier to show its usage in a Youtube video.
 
 # **Data logging**
 
-![](images/image61.png)
+![](/images/image61.png)
 
 Data logging is the life and blood of tuning, you'll be flying blind without it. The easiest way is to use the built-in logging capabilities of the Tactrix OpenPort unit, all that's required is a MicroSD card with a logcfg.txt file at the root of the SD card.
 
@@ -542,7 +539,7 @@ trigger action: start condition: APP,100.000000,== |
 
 ### **Monitoring external sensors**
 
-[OpenPort allows to datalog external sensors using the 3/32” jack](https://www.tactrix.com/index.php?option=com_content&view=article&id=76:what-are-pinout-and-pin-functions-of-the-openport-20&catid=39:openport-20&Itemid=41). One of the advantages of this input is that it doesn't impact the OpenPort unit performance as it doesn't actively query the ECU, it simply monitors the signal coming in. Use the ascii type with an arduino and you can datalog as many sensors as you like (read below to learn more).
+[OpenPort allows to datalog external sensors using the 3/32" jack](https://www.tactrix.com/index.php?option=com_content&view=article&id=76:what-are-pinout-and-pin-functions-of-the-openport-20&catid=39:openport-20&Itemid=41). One of the advantages of this input is that it doesn't impact the OpenPort unit performance as it doesn't actively query the ECU, it simply monitors the signal coming in. Use the ascii type with an arduino and you can datalog as many sensors as you like (read below to learn more).
 
 It offers 3 type:
 
@@ -646,7 +643,7 @@ I've created a sample tuning logbook to help you track your changes, [download i
 
 * Data logs the life of your car in every possible condition possible.eg: Highway cruising, driving around town, idle, cold/hot weather (within reason), WOT pulls, even different fuel stations. If your car isn't stock, consider getting it back to stock before data logging. Save these files previously somewhere safe, they'll serve as a reference and teach you how a OEM setup behaves.
 
-* Change one thing at the time whenever possible, both on the physical side and software side. This is my personal favorite, changing too many things at the same time is the equivalent of “haste is waste”.
+* Change one thing at the time whenever possible, both on the physical side and software side. This is my personal favorite, changing too many things at the same time is the equivalent of "haste is waste".
 
   *Note*: I understand that it's easier to install a new exhaust and cams while swapping a 2.5. Don't worry, it's doable, it's just a bit harder.
 
@@ -674,10 +671,10 @@ Short version, set everything to 0 except **Fuel IPW - Base** > **IPW - Base - E
 | Spark Limit - Base | [Flex] Spark Target Blend | 0 |
 
 **Before**  
-![](images/image13.png)
+![](/images/image13.png)
 
 **After**  
-![](images/image5.png)
+![](/images/image5.png)
 
 ##### **Enabling Manual blending**
 
@@ -689,12 +686,12 @@ Under **Engine Control - Manual Blend** set these tables:
 
   [You can see it in action here](https://www.facebook.com/groups/romdrop/permalink/434905370856277).
 
-![](images/image46.png)
+![](/images/image46.png)
 
 Under **Instrument Cluster - Speedometer**
 
 * Blend display format. Set to 1 *if your cluster is in MPH* otherwise the step size won't match what you see.
-  ![](images/image118.png)
+  ![](/images/image118.png)
 
 #### **How to blend VCT**
 
@@ -707,13 +704,13 @@ Under **Engine Control - VCT:**
 Eg: I chose 6 steps (0, 20%, 40%, 60%, 80%, 100%) to reach a 100 % [Flex] VCT Target. At 0% it'll use only the values from **VCT target** and at 100% it'll use only the values from [Flex] VCT . So to go from 35* to 0* it'll increment ~7* for each step.
 
 Hopefully the image below will make it easier to understand:  
-![](images/image13.png)  
+![](/images/image13.png)  
 *Note*: In retrospect I would not set VCT to a fixed value below 0.375 load since you'll most likely want to tune only the WOT region, the cruising region would require a load bearing dyno under steady state to have any sort of meaningful value.
 
 For VCT, the right way to get an idea of what the engine wants is to compare LOAD between runs which is the way Shifty35 did it, basically he makes a boat load of WOT pull for the same angle and average the result, this method uses quantity over quality. You can also get a rough idea with Virtual Dyno but your ECT, IAT, Timing and Knock need to be identical to get good results which is harder to do, this method is quality over quantity.
 
 This is what it looks like in Virtual Dyno:  
-![](images/image139.png)
+![](/images/image139.png)
 
 This was a rough draft designed to serve as an example and as you can see the crossover points between each VCT angles are not super easy to identify. On a real dyno the image would be crystal clear.
 
@@ -728,7 +725,7 @@ Under **Spark target - Base**
 
 Spark tuning uses the same concept as VCT. eg: you have a base table and a target table which is your [Flex] table. Increment are done in step of 10% and I've chose to add 10* over the base table so that each step is going to increase timing by 1*. The cells in the red rectangles are blended to smooth out the transition there surrounding cells. You can easily do this by interpolating the values vertically (column) with V shortcut and horizontally with H shortcut.
 
-![](images/image110.png)
+![](/images/image110.png)
 
 Under **Spark Limit - Base**
 
@@ -739,9 +736,9 @@ Under **Spark Limit - Base**
 
    To edit the table name, simply right click on the table and select Edit Map…, change the name and click Apply.
 
-  ![](images/image106.png)
+  ![](/images/image106.png)
 
-![](images/image126.png)
+![](/images/image126.png)
 
 ### **CAMs**
 
@@ -755,7 +752,7 @@ Under **Idle speed**:
 * Idle speed | In-Gear - increase desired RPM for a given engine temperature.
 * Idle speed | Not In-Gear - same as above.
 
-![](images/image97.png)  
+![](/images/image97.png)  
 *Left = Stock | Right = Tuned*
 
 **Load scaling**  
@@ -782,17 +779,17 @@ CAMs change the VE of your engine which means it's going to pump more air in som
 #### **Boost by gear for the famished**
 
 I highly recommend that you install a good EBC but you can use DBW to limit the amount of boost generated in the desired gears. Eg: let's say you have a 15 PSI wastegate which is too much for first and second gear, you can just limit the throttle opening to 30% and that will limit how much boost and torque is generated.
-![](images/image101.png)
+![](/images/image101.png)
 
 This can also be used to limit the boost in high gear and at low RPM, this can be useful if you're trying to limit torque at low RPM or lugging the engine.  
-![](images/image82.png)
+![](/images/image82.png)
 
 You'll need to plot boost VS throttle opening to figure out the throttle opening values to obtain a specific amount of boost as it is not linear. As shown below I could generate nearly 10 PSI with the throttle body only open to 30%.  
-![](images/image36.png)
+![](/images/image36.png)
 
 ## **Tuning for power (Mo Powa Babeh)**
 
-![](images/image58.jpg)  
+![](/images/image58.jpg)  
 Credit goes to Donut Media for this image. All rights reserved.
 
 Gaining HP mostly depends on [AFR], [Spark / ignition timing] and [VCT] and [IMTV].
@@ -814,7 +811,7 @@ Long story short, **APP below WOT** addresses mostly closed loop (cruising aroun
 
 Eg: A tuned version for an NA build on pump gas could look like the table on the right. Note the transition from 0.884 to 0.85 (12.5 AFR). Whenever making changes always make sure to have a smooth transition, both the engine and ECU will benefit from it.
 
-![](images/image79.png)  
+![](/images/image79.png)  
 *Left = Stock | Right = Tuned*
 
 Same table as above but in a more convenient format. This is a test for now, the goal would be to allow you to simply copy and paste the values but it doesn't work for some reason.
@@ -852,16 +849,16 @@ Under **Engine Control - VCT** set
 
 Top is stock OEM, bottom is what I was running on my 2.0L, this has not been optimized on the dyno so its quality remains to be proven. IIRC use vtechkiller mentioning that no gains were made with 35*.
 
-![](images/image76.png)  
+![](/images/image76.png)  
 *Top = Stock | Bottom = Tuned*
 
 #### **2.5L with stock CAMs example**
 
 This is what I run my 2.5, this has not been optimized on the dyno so its quality remains to be proven.  
-![](images/image112.png)
+![](/images/image112.png)
 
 This one is from Justin Gavin race car which runs a completely stock 2.5 which was apparently tuned by someone reputable. I'll admit it's an interesting tune and I'll give it a try once summer is back.  
-![](images/image115.png)
+![](/images/image115.png)
 
 ### **Tuning - Spark / ignition timing**
 
@@ -888,7 +885,7 @@ This is the valve that controls the runner length of the intake, eg: the air can
 
 [Quote from the Roadster.blog](https://www.roadster.blog/2013/05/roadster-engines.html)  
 Between 3250 and 5000rpm the VIS valve is closed to maximise torque and produce a nice sound from equal length intake runners.   Above 5000rpm to redline the valve opens creating shorter unequal runner lengths and altering the induction noise to become a more throaty rumble.  
-![](images/image107.png)
+![](/images/image107.png)
 
 #### **How to**
 
@@ -904,7 +901,7 @@ Changing the crossover RPM is simple, it's just the "IMTV Open (Primary)" and "I
 
 The table **IMTV Open (Secondary) - Throttle Position** defines a secondary threshold for the IMTV to open, meaning it also gates the transition from short to long. By default, you need a minimum of 15% throttle, but there's another important thing in this table - beyond 4000, the runners WILL NOT SWITCH from short to long, no matter what the RPM thresholds are set to, because the 110% throttle condition can't be satisfied! The goal of this is to provide some hysteresis on the long->short transition. The transition isn't instant, and getting on and off the throttle up there could potentially make it open and close rapidly, which isn't great. This is generally a good thing, so you'd want to keep this functionality. However, if you increase the long-> short transition to say 5800, you have this very large RPM band, 4000-5800, where the long runner simply can't open. If you're at 4500 rpm and light throttle in say 3rd and step down, you're stuck in the short runners until rpm drops below 4000. So, I made some adjustments as follows (left = stock, right = tuned):
 
-**![](images/image108.png)**  
+**![](/images/image108.png)**  
 *Left = stock | right =tuned*
 
 By changing the throttle required from 15 to -5, the long runners will ALWAYS engage between the RPM thresholds. This provides a little extra responsiveness when you open the throttle, since you don't have to wait for the runners to open. And by making the 1 rpm delta at 4999/5000 rpm, there is a 500 rpm hysteresis window.
@@ -919,18 +916,18 @@ There's two ways to evaluate if the new crossover points are optimal.
 
 *Example #1*  
 *This is an initial test on my boosted 2.0L with stock cams, the crossover point tested where 4750 (stock) vs 5250.*  
-![](images/image92.png)  
+![](/images/image92.png)  
 *Ignore the difference in power around 4000 as the timing was different at that point.*
 
 *Example #2*  
 Not a typical setup but a valid datapoint by Brian Axup. Below you can see the effect of the two runners and where they make the most power respectively.  
 [Longrod 2.4L w/ 12:1 & Stage 4 Esslinger VCT cams](https://www.facebook.com/groups/2006740659573188/permalink/3125360674377842/)  
-![](images/image95.png)
+![](/images/image95.png)
 
 ##### **Using LOAD**
 
 A higher load means there's more air entering the engine and more air means more power. As can be seen in the example below the dip centered at 5000 is greatly reduced.  
-![](images/image33.png)
+![](/images/image33.png)
 
 Other reference: [DIY Tuner - Raise your IMTV for free power](https://forum.miata.net/vb/showthread.php?t=758990).
 
@@ -954,15 +951,15 @@ Stock 2.0l injectors are rated
 
 This whole block is from [Roadster.blog](https://www.roadster.blog/2013/05/roadster-engines.html), full credits goes to the owner. I've decided to copy it in its entirety because it's well written and covers the basics.
 
-![](images/image48.jpg)  
+![](/images/image48.jpg)  
 The MZR engine and its implementation in the Roadster is noteworthy.  The engine is an aluminium block and head with iron cylinder liners.   The double overhead camshafts are driven by a chain rather than a belt. The engine also features molybdic coated anti-friction pistons, variable valve timing on the intake side, electronic sequential fuel injection, and a coil-on-plug ignition system. Engines in all markets use a compression ratio of 10.8:1 and a stroke of 83.1mm. The bore on the 2.0 is 87.5mm and 83.0mm for the 1.8 litre version.
 
 Despite being a larger displacement, the MZR is actually a smaller unit than the previous generation BP engines.  It also weighs some 19kg less thanks to it's aluminium construction and lightweight plastic intake manifold and cam cover, even the flywheel is 0.3kg lighter than previously. The engine is tilted 10 degrees to the right to allow room on the intake side for the Variable Intake System (VIS) inlet manifold. The VIS has two operating modes designed to boost torque, it is also tuned to alter the engine sound at high revs.
 
 Between 3250 and 5000rpm the VIS valve is closed to maximise torque and produce a nice sound from equal length intake runners.   Above 5000rpm to redline the valve opens creating shorter unequal runner lengths and altering the induction noise to become a more throaty rumble. In the UK the inlet manifold has extra swirl-control valves to reduce exhaust emissions at low revs and improve driveability from cold. Mazda says inlet restriction has been reduced by 57 percent and exhaust restriction is down by 40 percent.  
-![](images/image107.png)  
+![](/images/image107.png)  
 To improve handling dynamics the heaviest items were moved closer to the centre of the car. The engine is mounted 135mm further back than in the previous generation, sitting behind the front wheels. This was partly achieved by using a smaller heater unit and creating more space between the driver and passenger. The battery is now found in the engine bay as opposed to the boot as being upfront moved it closer to the centre of mass.  
-![](images/image146.jpg)  
+![](/images/image146.jpg)  
 The NC2 Mk3.5 revisions introduced some changes to the 2.0 MZR engine internals on manual transmission cars. These include a new forged steel crankshaft, forged steel connecting rods with floating wrist pins, revised pistons with stronger wrist pin bosses, stiffer valve springs, and an engine oil cooler. These changes didn't noticeably increase power (it went up by 1 Bhp) but did allow the rev limits on manual transmission cars to be raised by 500rpm making the car feel even more lively.
 
 Probably the most talked about topic will be power outputs. I've put together a table below which shows how the Roadster's engines compare across the different markets. The figures were taken from Mazda's published technical data. Let's start with the original NC1 model.
@@ -1070,7 +1067,7 @@ Speeps has spent an extensive amount of time reverse engineering the NC ECU, bui
 
 ## **Base fuel target**
 
-![](images/image138.png)
+![](/images/image138.png)
 
 This is the general logic behind the base fuel target. In this we learn that in the eyes of the ECU, the base fueling for closed loop is one thing, 0.0 (which reflects stoich). We also learn that the other base tables have nothing to do with closed loop. Instead we've got two sets of tables for two different overall conditions. That condition is pretty much, are we above/below an APP threshold. I'll call it the WOT threshold. If you are above, use the throttle based tables, if you are below use the load based tables. If you have a throttle fault, use the load based tables.
 
@@ -1230,21 +1227,21 @@ RPM = 120,000,000 / CKP Delta
 
 ### **Air density**
 
-Air Density (g/cc) = $\frac{353 \times BARO}{101320 \times \bigl(0.1992 \times (ECT - IAT) + IAT + 273\bigr)}$
+Air Density (g/cc) = $$\frac{353 \times BARO}{101320 \times \bigl(0.1992 \times (ECT - IAT) + IAT + 273\bigr)}$$
 
 ### **Load**
 
-$ \text{Load Base (\% cylinder fill)} = \frac{120 \cdot MAF}{\text{engine displacement} \cdot \text{air density} \cdot RPM} $
-$ \text{Load Scaling} = \text{corrects load base for VE changes (includes VCT)} $
-$ \text{Load Limit} = \text{maximum cylinder efficiency across rpm range} $
-$ \text{Load A} = \min(\text{load base},\ \text{load limit}) \cdot \text{load scaling} $
-$ \text{Load B} = \min(\text{load base with idle correction},\ \text{load limit}) \cdot \text{load scaling} $
-$ \text{Load Corrected} = \frac{\text{air density} \cdot \text{load A}}{0.0012} $
-$ \text{Load Corrected w/ Idle (Absolute)} = \frac{\text{air density} \cdot \text{load B}}{0.0012} $
+$$\text{Load Base (\% cylinder fill)} = \frac{120 \cdot MAF}{\text{engine displacement} \cdot \text{air density} \cdot RPM}$$
+$$\text{Load Scaling} = \text{corrects load base for VE changes (includes VCT)}$$
+$$\text{Load Limit} = \text{maximum cylinder efficiency across rpm range}$$
+$$\text{Load A} = \min(\text{load base},\ \text{load limit}) \cdot \text{load scaling}$$
+$$\text{Load B} = \min(\text{load base with idle correction},\ \text{load limit}) \cdot \text{load scaling}$$
+$$\text{Load Corrected} = \frac{\text{air density} \cdot \text{load A}}{0.0012}$$
+$$\text{Load Corrected w/ Idle (Absolute)} = \frac{\text{air density} \cdot \text{load B}}{0.0012}$$
 
 ### **MAF corrected**
 
-MAF corrected = $\frac{load\ B \times engine\ displacement \times air\ density \times RPM}{120}$
+MAF corrected = $$\frac{load\ B \times engine\ displacement \times air\ density \times RPM}{120}$$
 
 * used for MAF breakpoints  
 * used for STFT coefficients  
@@ -1259,7 +1256,7 @@ Base IPW = calculated injector pulse width required to maintain stoich AFR
 MAP Scaling = scaling required to maintain stoich AFR across manifold pressures  
 Global Constant = 1.065 (2L), 1.079 (1.8L), still trying to understand if it serves any function outside of being a global scaler.  
 Fuel Demand Change (%) = all fuel request that demand IPW outside base (stoich)  
-IPW = $(\text{Base IPW}) \times (\text{MAP Scaling (\%)}) \times (\text{Load Fuel (\%)}) \times (\text{Fuel Demand Change (\%)}) \times (\text{Global Constant (\%)})$
+IPW = $$(\text{Base IPW}) \times (\text{MAP Scaling (\%)}) \times (\text{Load Fuel (\%)}) \times (\text{Fuel Demand Change (\%)}) \times (\text{Global Constant (\%)})$$
 
 ### **Injector flow rate conversion**
 
@@ -1276,15 +1273,15 @@ RO2S Based Trims (reflects RO2S Trim OBD PID)
 
 ### **EQ ratio desired**
 
-$\text{CL Target} + \left(\frac{100}{\text{RO2S Based Trims} + 100} - 1\right) + \left(\frac{100}{\left(\frac{\text{P0421 Warm-Up Cat Monitor}}{2}\right) + 100} - 1\right)$
+$$\text{CL Target} + \left(\frac{100}{\text{RO2S Based Trims} + 100} - 1\right) + \left(\frac{100}{\left(\frac{\text{P0421 Warm-Up Cat Monitor}}{2}\right) + 100} - 1\right)$$
 
 ### **Short term targeting**
 
-$\left(100 / (\text{EqRatioDsd} + \text{P0133 Monitor} + \text{STFT}) - 100\right) + \text{Trans to CL Comp}$
+$$\left(100 / (\text{EqRatioDsd} + \text{P0133 Monitor} + \text{STFT}) - 100\right) + \text{Trans to CL Comp}$$
 
 ### **OBD PIDS**
 
-To Do - list and define from here? <https://forum.miata.net/vb/showthread.php?t=631418>
+To Do - list and define from here? https://forum.miata.net/vb/showthread.php?t=631418
 
 # **2.5L L5-VE knowledge base**
 
@@ -1302,40 +1299,40 @@ These are the stock tables for a 2.5L and their purpose is to serve as a referen
 
 #### **Load scaling table**
 
-![](images/image103.png)
+![](/images/image103.png)
 
 #### **Fuel Closed loop**
 
 Note: Both low det and high det tables are identical.  
-![](images/image131.png)
+![](/images/image131.png)
 
 #### **Spark base - High fuel request - Low det**
 
 After digging around and asking question it turns out MBT on at **STOCK** (including cams) at full load is around 24-25* which should technically be achievable on 93 and even 91.
 
 Note: a cammed engine will have a different timing.  
-![](images/image19.png)
+![](/images/image19.png)
 
 These values were observed by albuquerquefx Mazda 6 2.5L on 93 octane  
-![](images/image23.png)
+![](/images/image23.png)
 
 #### **Spark base - High fuel request - Hit det**
 
 These values were observed by albuquerquefx Mazda 6 2.5L on 87 octane  
-![](images/image133.png)
+![](/images/image133.png)
 
 #### **Engine Control - VCT**
 
 Apparently this one is from Mazda 3 and the first table would be for CL and the second for OL.  
-![](images/image84.png)
+![](/images/image84.png)
 
 #### **Spark correction - Knock Retard**
 
-![](images/image47.png)
+![](/images/image47.png)
 
 #### **Engine sensor - KS - Capture to Magnitude**
 
-![](images/image70.png)
+![](/images/image70.png)
 
 ## **2.5L Swap**
 
@@ -1352,7 +1349,7 @@ Long story short there's no benefit.
 *Black = welded & port matched*  
 *Both manifold setups were run with the same ignition advance as well as a pretty darn close fuel curve as you can see in the AFR chart.  The mapping is not set on kill, it's setup so it can be repeatable for testing.*  
 *Hope you all enjoy data!*  
-![](images/image11.png)
+![](/images/image11.png)
 
 # **DIY projects**
 
