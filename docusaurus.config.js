@@ -52,6 +52,7 @@ const config = {
           editUrl: 'https://github.com/VIRUXE/ncmiatatuning-docs/tree/main/docs/',
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
+          sidebar: false, // Disable the sidebar
         },
         blog: false,
         theme: {
