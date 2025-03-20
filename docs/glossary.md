@@ -4,53 +4,57 @@ id: "glossary"
 sidebar_position: 10
 ---
 
-## A {#a}
-APP: Accelerator Pedal Position  
-AFR: Air:Fuel Ratio  
+# Automotive Terms and Acronyms
 
-## C {#c}
-CL: Closed Loop  
-CPP: Clutch Pedal Position  
+---
 
-## D {#d}
-DBW: Drive by Wire  
+## A
+**APP**: Accelerator Pedal Position  
+**AFR**: Air:Fuel Ratio  
 
-## E {#e}
-ECT: Engine Coolant Temperature  
-ECU: Engine Control Unit  
-EGR: Exhaust Gas Recirculation  
+## C
+**CL**: Closed Loop  
+**CPP**: Clutch Pedal Position  
 
-## F {#f}
-FT: Fuel trims  
+## D
+**DBW**: Drive by Wire  
 
-## H {#h}
-High det: High det tables are used if the ECU senses too much knock, eg: you have fuel with a lower octane rating such as 87.  
+## E
+**ECT**: Engine Coolant Temperature  
+**ECU**: Engine Control Unit  
+**EGR**: Exhaust Gas Recirculation  
 
-## I {#i}
-IAT: Intake air temperature  
-IDC: Injector Duty Cycle  
-IMRC: Intake Manifold Runner Control (Automatic only)  
-IMTV: Intake Manifold Tumbler Valve  
-IPW: Injector Pulse Width  
+## F
+**FT**: Fuel trims  
 
-## L {#l}
-Limp mode: **TODO: Add description**  
-Low det: Low det tables are used by the ECU senses few to no knock events, eg: you have good fuel with an octane rating of 91 or more  
-LTFT: Long Term Fuel Trim  
+## H
+**High det**: High detonation tables are used if the ECU senses too much knock, e.g., when using fuel with a lower octane rating such as 87.  
 
-## M {#m}
-MAF: Mass Air Flow [sensor]  
-MAP: Manifold Absolute Pressure  
+## I
+**IAT**: Intake Air Temperature  
+**IDC**: Injector Duty Cycle  
+**IMRC**: Intake Manifold Runner Control (Automatic only)  
+**IMTV**: Intake Manifold Tumbler Valve  
+**IPW**: Injector Pulse Width  
 
-## O {#o}
-OL: Open Loop  
+## L
+**Limp mode**: A safety feature where the ECU restricts engine performance to prevent damage when it detects a serious problem. Typically results in reduced power, limited RPM, and illuminated check engine light.  
+**Low det**: Low detonation tables are used when the ECU senses few to no knock events, e.g., when using good fuel with an octane rating of 91 or more.  
+**LTFT**: Long Term Fuel Trim  
 
-## S {#s}
-STFT: Short Term Fuel Trim  
+## M
+**MAF**: Mass Air Flow [sensor]  
+**MAP**: Manifold Absolute Pressure  
 
-## V {#v}
-VCT/VVT: Variable Cam Timing/Variable Valve Timing (Used interchangeably)  
+## O
+**OL**: Open Loop  
 
-## W {#w}
-WIP: Work in Progress  
-WOT: Wide Open Throttle
+## S
+**STFT**: Short Term Fuel Trim  
+
+## V
+**VCT/VVT**: Variable Cam Timing/Variable Valve Timing (Used interchangeably)  
+
+## W
+**WIP**: Work in Progress  
+**WOT**: Wide Open Throttle
